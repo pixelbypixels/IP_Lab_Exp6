@@ -1,0 +1,122 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+/* Global link styles */
+a {
+  text-decoration: none;
+  color: #4A90E2;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1c6a9e;
+}
+
+/* Header and Footer */
+header {
+  background-color: #4A90E2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #4A90E2;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+/* Container for content sections */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Button styles */
+button {
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #1c6a9e;
+}
+
+/* Global form styles */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+  border-color: #4A90E2;
+  outline: none;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  header {
+      font-size: 1.2rem;
+  }
+
+  button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+  }
+
+  .container {
+      padding: 15px;
+  }
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
